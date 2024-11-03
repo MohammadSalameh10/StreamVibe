@@ -1,0 +1,24 @@
+body{
+    background-color: #141414;
+}
+
+.navbar-nav .nav-link.active{
+    background-color:#1A1A1A ;
+    border-radius: 5px;
+}
+
+.navbar-expand-lg .navbar-nav{
+background-color: #0F0F0F;
+padding: 10px 15px 10px 10px ;
+border: 3px solid #1A1A1A;
+border-radius: 6px;
+}
+.search-notifications img{
+cursor: pointer;    
+}
+@media screen and (max-width: 992px) {
+    .search-notifications img{
+        display: none;
+    }
+}
+
