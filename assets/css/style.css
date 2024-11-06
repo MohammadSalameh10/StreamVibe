@@ -139,6 +139,7 @@ a {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.032) 0%, #1414148d 100%);
+    left: 0;
 }
 
 .card-body {
@@ -192,6 +193,30 @@ a {
 
 }
 
+.viewing-platforms{
+    color: #fff;
+    padding: 50px 0;
+}
+.platforms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px 0;
+}
+.platforms-item{
+    width: calc((100% - 20px) / 3);
+    background-color: #0F0F0F;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #262626;
+    background: linear-gradient(225deg, rgba(229, 0, 0, 0.105) 0%, rgba(229,0,0,0) 30%);
+}
+.paltform-name img{
+    background-color:#141414 ;
+    border: 1px solid #1F1F1F;
+    padding: 9px 18px;
+    border-radius: 5px;
+}
 .footer {
     background-color: #0F0F0F;
     padding: 60px 0;
