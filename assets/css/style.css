@@ -47,7 +47,6 @@ a {
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.699) 0%, #141414d0 100%);
 }
 
-
 .header-description h1 {
     color: #fff;
 }
@@ -147,7 +146,6 @@ a {
     cursor: pointer;
 }
 
-
 @media screen and (max-width: 991px) {
     #horror {
         display: none;
@@ -167,7 +165,6 @@ a {
         width: calc((100% - 10px) / 3);
     }
 }
-
 
 @media screen and (max-width: 575px) {
     .movies-categories-pagination {
@@ -197,12 +194,14 @@ a {
     color: #fff;
     padding: 50px 0;
 }
+
 .platforms{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 30px 0;
 }
+
 .platforms-item{
     width: calc((100% - 20px) / 3);
     background-color: #0F0F0F;
@@ -211,12 +210,26 @@ a {
     border: 1px solid #262626;
     background: linear-gradient(225deg, rgba(229, 0, 0, 0.105) 0%, rgba(229,0,0,0) 30%);
 }
+
 .paltform-name img{
     background-color:#141414 ;
     border: 1px solid #1F1F1F;
     padding: 9px 18px;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 991px) {
+    .platforms-item {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .platforms-item {
+        width: 100%;
+    }
+}
+
 .footer {
     background-color: #0F0F0F;
     padding: 60px 0;
@@ -266,7 +279,6 @@ a {
     height: 100%;
     background-color: #999999;
 }
-
 
 @media screen and (max-width: 575px) {
     .conclusion {
