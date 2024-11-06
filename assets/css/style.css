@@ -32,7 +32,6 @@ a {
     background-image: url(./../img/header/movies.png);
     background-size: 100% 75%;;
     background-repeat: no-repeat;
-   
 }
 
 .header-logo {
@@ -40,13 +39,11 @@ a {
 }
 
 .header-logo img {
-    width: 100%;
     height: 100%;
 }
 
 .header-background {
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.699) 0%, #141414d0 100%);
-    height: 100vh;
 }
 
 
@@ -61,7 +58,6 @@ a {
 
 .start-watching .start-watching-btn {
     background-color: #E50000;
-
 }
 
 .start-watching a {
@@ -74,6 +70,67 @@ a {
         display: none;
     }
 }
+
+.movies-categories{
+height: 500px;
+}
+.movies-description-pagination{
+    color: #fff;
+}
+.movies-categories-pagination{
+    background-color: #0F0F0F;
+    border: 1px solid #1F1F1F;
+    border-radius: 7px;
+    width: fit-content;
+}
+.movies-categories-pagination ul i{
+background-color: #1A1A1A;
+border: 1px solid #1F1F1F;
+padding: 8px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.list-active{
+    background-color: #E50000;
+    width: 15px;
+}
+
+.list-non-active{
+    background-color: #333333;
+    width: 10px;
+}
+
+.list-active,.list-non-active{
+    height: 2.5px;
+    border-radius: 1px;
+}
+.movie-category .card{
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    border: 1px solid #262626;
+}
+
+.action-images img,
+.adventure-images img,
+.comedy-images img,
+.drama-images img,
+.horror-images img {
+    border-radius: 10px;
+ }
+
+.images-cover{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.032) 0%, #1414148d 100%);
+}
+
+.card-body{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 
 .footer {
     background-color: #0F0F0F;
