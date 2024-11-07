@@ -245,7 +245,6 @@ a {
 .questions .ask-question-btn{
     background-color: #E50000;
     width: fit-content;
-
 }
 .questions .ask-question-btn a{
     color: #fff;
@@ -257,6 +256,21 @@ a {
     border-radius: 10px;
     border: 1px solid #262626;
     padding: 10px 12px;
+}
+
+@media screen and (max-width: 991px) {
+   .questions-place{
+    flex-wrap: wrap;
+   }
+   .questions-item{
+    width: 100%;
+   }
+}
+
+@media screen and (max-width: 575px) {
+    .questions .ask-question-btn{
+        margin-left: 12px;
+    }
 }
 
 .footer {
