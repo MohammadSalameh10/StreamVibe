@@ -75,9 +75,10 @@ a {
     height: 500px;
 }
 
-.movies-categories p{
+.movies-categories p {
     color: #999999;
 }
+
 .movie-category {
     display: flex;
     align-items: center;
@@ -160,7 +161,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-    #drama{
+    #drama {
         display: none;
     }
 
@@ -177,13 +178,14 @@ a {
     .movies-categories-description {
         text-align: center;
     }
-    .movies-categories-pagination-end{
-        display: flex !important; 
+
+    .movies-categories-pagination-end {
+        display: flex !important;
     }
 }
 
 @media screen and (max-width: 480px) {
-    #comedy{
+    #comedy {
         display: none;
     }
 
@@ -193,31 +195,33 @@ a {
 
 }
 
-.viewing-platforms{
+.viewing-platforms {
     color: #fff;
     padding: 50px 0;
 }
-.viewing-platforms p{
+
+.viewing-platforms p {
     color: #999999;
 }
-.platforms{
+
+.platforms {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 30px 0;
 }
 
-.platforms-item{
+.platforms-item {
     width: calc((100% - 20px) / 3);
     background-color: #0F0F0F;
     border-radius: 10px;
     padding: 30px;
     border: 1px solid #262626;
-    background: linear-gradient(225deg, rgba(229, 0, 0, 0.105) 0%, rgba(229,0,0,0) 30%);
+    background: linear-gradient(225deg, rgba(229, 0, 0, 0.105) 0%, rgba(229, 0, 0, 0) 30%);
 }
 
-.paltform-name img{
-    background-color:#141414 ;
+.paltform-name img {
+    background-color: #141414;
     border: 1px solid #1F1F1F;
     padding: 9px 18px;
     border-radius: 5px;
@@ -236,41 +240,117 @@ a {
 }
 
 
-.questions{
+.questions {
     color: #fff;
 }
-.questions p{
+
+.questions p {
     color: #999999;
 }
-.questions .ask-question-btn{
+
+.questions .ask-question-btn {
     background-color: #E50000;
     width: fit-content;
 }
-.questions .ask-question-btn a{
+
+.questions .ask-question-btn a {
     color: #fff;
     font-size: 13px;
 }
 
-.question span{
-    background-color:#1F1F1F ;
+.question span {
+    background-color: #1F1F1F;
     border-radius: 10px;
     border: 1px solid #262626;
     padding: 10px 12px;
 }
 
+.question i {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 991px) {
-   .questions-place{
-    flex-wrap: wrap;
-   }
-   .questions-item{
-    width: 100%;
-   }
+    .questions-place {
+        flex-wrap: wrap;
+    }
+
+    .questions-item {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 575px) {
-    .questions .ask-question-btn{
+    .questions .ask-question-btn {
         margin-left: 12px;
     }
+}
+
+.movies-watching-plans {
+    color: #fff;
+    padding: 50px 0;
+}
+
+.Choose-plan-duration {
+    width: fit-content;
+    background: #0F0F0F;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 7px 14px;
+}
+
+.Choose-plan-duration li{
+    cursor: pointer;
+}
+.Choose-plan-duration .active{
+background-color: #1F1F1F;
+padding: 10px 12px;
+border-radius: 5px;
+}
+
+
+.plan-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.plan-item {
+    width: calc((100% - 30px) / 3);
+    padding: 30px 20px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    border: 1px solid #262626;
+}
+
+.plan-item .price {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.plan-item .duration {
+    font-size: 10px;
+    font-weight: 100;
+    color: #999999;
+}
+
+.start-plan {
+    padding: 10px 0 0 0;
+}
+
+.start-plan a {
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.start-plan a:nth-child(1) {
+    background-color: #141414;
+    border: 1px solid #262626;
+}
+
+.start-plan a:nth-child(2) {
+    background-color: #E50000;
 }
 
 .footer {
