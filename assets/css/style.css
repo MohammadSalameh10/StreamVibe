@@ -290,6 +290,10 @@ a {
     padding: 50px 0;
 }
 
+.movies-watching-plans p {
+    color: #999999;
+}
+
 .Choose-plan-duration {
     width: fit-content;
     background: #0F0F0F;
@@ -301,6 +305,7 @@ a {
 .Choose-plan-duration li{
     cursor: pointer;
 }
+
 .Choose-plan-duration .active{
 background-color: #1F1F1F;
 padding: 10px 12px;
@@ -328,7 +333,7 @@ border-radius: 5px;
 }
 
 .plan-item .duration {
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 100;
     color: #999999;
 }
@@ -351,6 +356,24 @@ border-radius: 5px;
 
 .start-plan a:nth-child(2) {
     background-color: #E50000;
+}
+
+@media screen and (max-width: 1199px) {
+    .start-plan a {
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .plan-item {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .Choose-plan-duration {
+        margin-left: 12px;
+    }
 }
 
 .footer {
