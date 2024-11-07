@@ -31,7 +31,6 @@ a {
 .header {
     background-image: url(./../img/header/movies.png);
     background-size: 100% 75%;
-    ;
     background-repeat: no-repeat;
 }
 
@@ -302,14 +301,14 @@ a {
     padding: 7px 14px;
 }
 
-.Choose-plan-duration li{
+.Choose-plan-duration li {
     cursor: pointer;
 }
 
-.Choose-plan-duration .active{
-background-color: #1F1F1F;
-padding: 10px 12px;
-border-radius: 5px;
+.Choose-plan-duration .active {
+    background-color: #1F1F1F;
+    padding: 10px 12px;
+    border-radius: 5px;
 }
 
 
@@ -366,7 +365,7 @@ border-radius: 5px;
 
 @media screen and (max-width: 1199px) {
     .plan-item {
-        width:100%;
+        width: 100%;
     }
 }
 
@@ -374,6 +373,37 @@ border-radius: 5px;
     .Choose-plan-duration {
         margin-left: 12px;
     }
+}
+
+.movies-start-plan {
+    padding: 50px 0;
+    color: #fff;
+}
+
+.start-plan-background {
+    background-image: url(./../img/start_plan/movies.png);
+    height: 235px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.start-plan-item {
+    margin-left: 49.5px;
+    width: 1197px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(15, 15, 15, 1) 2%, rgba(20, 15, 15, 0.959) 16%, rgba(34, 14, 14, 0.884) 28%, rgba(229, 0, 0, 0.413) 100%);
+}
+
+.start-plan-btn {
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color: #E50000;
+}
+
+.start-plan-btn a {
+    color: #fff;
+    font-size: 13px;
 }
 
 .footer {
