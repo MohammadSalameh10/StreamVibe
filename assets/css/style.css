@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 body {
     background-color: #141414;
 }
@@ -6,48 +8,45 @@ a {
     text-decoration: none;
 }
 
-.navbar-nav .nav-link.active {
-    background-color: #1A1A1A;
-    border-radius: 5px;
+:root {
+    --main-font: 'manrope';
 }
 
-.navbar-expand-lg .navbar-nav {
-    background-color: #0F0F0F;
-    padding: 10px 15px 10px 10px;
-    border: 3px solid #1A1A1A;
-    border-radius: 6px;
+section,
+header,
+footer {
+    font-family: var(--main-font);
 }
 
-.search-notifications img {
-    cursor: pointer;
+section,
+h1 {
+    color: #fff;
 }
 
-@media screen and (max-width: 992px) {
-    .search-notifications img {
-        display: none;
-    }
+section p {
+    color: #999999;
 }
 
+/* header css */
 .header {
     background-image: url(./../img/header/movies.png);
-    background-size: 100% 75%;
+    background-position: top center;
     background-repeat: no-repeat;
-}
-
-.header-logo {
-    width: calc(20% - 1%);
-}
-
-.header-logo img {
-    height: 100%;
+    height: 900px;
 }
 
 .header-background {
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.699) 0%, #141414d0 100%);
+    height: 100%;
 }
 
-.header-description h1 {
-    color: #fff;
+.header-logo {
+    width:24%;
+    margin-top: 100px;
+}
+
+.header-description {
+    margin-top: 48px;
 }
 
 .header-description p {
@@ -55,42 +54,54 @@ a {
     font-size: 13px;
 }
 
-.start-watching .start-watching-btn {
+.header-start-watching .start-watching-btn {
     background-color: #E50000;
 }
 
-.start-watching a {
+.header-start-watching a {
     color: #fff;
     font-size: 13px;
 }
 
-@media screen and (max-width: 575px) {
-    .header-logo img {
+/* start media header */
+@media screen and (max-width: 1199px) {
+    .header-logo {
+        margin-top: 260px;
+    }
+}
+/* end media header */
+
+/* navbar css */
+.navbar-expand-lg .navbar-nav {
+    background-color: #0F0F0F;
+    padding: 10px 15px 10px 10px;
+    border: 3px solid #1A1A1A;
+    border-radius: 6px;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #1A1A1A;
+    border-radius: 5px;
+}
+
+.navbar-search-notifications img {
+    cursor: pointer;
+}
+
+/* start media navbar */
+@media screen and (max-width: 992px) {
+    .navbar-search-notifications img {
         display: none;
     }
 }
+/* end media navbar */
 
+/* movies-categories css */
 .movies-categories {
     height: 500px;
+    font-family: var(--main-font);
 }
 
-.movies-categories p {
-    color: #999999;
-}
-
-.movie-category {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.movie-category .card {
-    width: calc((100% - 10px) / 5);
-}
-
-.movies-description-pagination {
-    color: #fff;
-}
 
 .movies-categories-pagination {
     background-color: #0F0F0F;
@@ -123,7 +134,14 @@ a {
     border-radius: 1px;
 }
 
+.movie-category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .movie-category .card {
+    width: calc((100% - 10px) / 5);
     background-color: #1A1A1A;
     border-radius: 10px;
     border: 1px solid #262626;
@@ -149,6 +167,7 @@ a {
     cursor: pointer;
 }
 
+/* start media movies-categories */
 @media screen and (max-width: 991px) {
     #horror {
         display: none;
@@ -191,16 +210,12 @@ a {
     .movie-category .card {
         width: calc((100% - 10px) / 2);
     }
-
 }
+/* end media movies-categories */
 
+/* viewing-platforms css */
 .viewing-platforms {
-    color: #fff;
     padding: 50px 0;
-}
-
-.viewing-platforms p {
-    color: #999999;
 }
 
 .platforms {
@@ -226,6 +241,7 @@ a {
     border-radius: 5px;
 }
 
+/* start media viewing-platforms */
 @media screen and (max-width: 991px) {
     .platforms-item {
         width: calc((100% - 20px) / 2);
@@ -237,16 +253,9 @@ a {
         width: 100%;
     }
 }
+/* end media viewing-platforms */
 
-
-.questions {
-    color: #fff;
-}
-
-.questions p {
-    color: #999999;
-}
-
+/* questions css */
 .questions .ask-question-btn {
     background-color: #E50000;
     width: fit-content;
@@ -268,6 +277,7 @@ a {
     cursor: pointer;
 }
 
+/* start media questions */
 @media screen and (max-width: 991px) {
     .questions-place {
         flex-wrap: wrap;
@@ -283,17 +293,14 @@ a {
         margin-left: 12px;
     }
 }
+/* end media questions */
 
+/* movies-watching-plans css */
 .movies-watching-plans {
-    color: #fff;
     padding: 50px 0;
 }
 
-.movies-watching-plans p {
-    color: #999999;
-}
-
-.Choose-plan-duration {
+.choose-plan-duration {
     width: fit-content;
     background: #0F0F0F;
     border: 1px solid #262626;
@@ -301,16 +308,15 @@ a {
     padding: 7px 14px;
 }
 
-.Choose-plan-duration li {
+.choose-plan-duration li {
     cursor: pointer;
 }
 
-.Choose-plan-duration .active {
+.choose-plan-duration .active {
     background-color: #1F1F1F;
     padding: 10px 12px;
     border-radius: 5px;
 }
-
 
 .plan-type {
     display: flex;
@@ -357,6 +363,7 @@ a {
     background-color: #E50000;
 }
 
+/* start media movies-watching-plans */
 @media screen and (max-width: 1199px) {
     .start-plan a {
         padding: 12px 20px;
@@ -370,14 +377,21 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-    .Choose-plan-duration {
+    .choose-plan-duration {
         margin-left: 12px;
     }
 }
 
+@media screen and (max-width: 400px) {
+    .start-plan a {
+        padding: 12px 18px;
+    }
+}
+/* end media movies-watching-plans */
+
+/* movies-start-plan css */
 .movies-start-plan {
     padding: 50px 20px;
-    color: #fff;
 }
 
 .start-plan-background {
@@ -385,7 +399,6 @@ a {
     height: 235px;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .start-plan-item {
@@ -395,23 +408,20 @@ a {
     background: linear-gradient(90deg, rgba(15, 15, 15, 1) 2%, rgba(20, 15, 15, 0.959) 16%, rgba(34, 14, 14, 0.884) 28%, rgba(229, 0, 0, 0.413) 100%);
 }
 
-.start-plan-btn {
-    padding: 12px 24px;
+.start-plan-btn a {
+    color: #fff;
+    font-size: 13px;
+    padding: 12px 15px;
     border-radius: 5px;
     background-color: #E50000;
 }
 
-.start-plan-btn a {
-    color: #fff;
-    font-size: 13px;
-}
-
+/* start media movies-start-plan */
 @media screen and (max-width: 1399px) {
     .start-plan-item {
         margin-left: 0px;
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 1199px) {
@@ -423,13 +433,15 @@ a {
 }
 
 @media screen and (max-width: 991px) {
- .start-plan-item .row{
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
- }
+    .start-plan-item .row {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 }
+/* end media movies-start-plan */
 
+/* footer css */
 .footer {
     background-color: #0F0F0F;
     padding: 60px 0;
@@ -444,16 +456,13 @@ a {
     margin: 50px 0 20px 0;
 }
 
-.footer-item h2 {
+.footer-item h2,
+.footer-social h2 {
     color: #fff;
 }
 
 .footer-item a {
     color: #999999;
-}
-
-.footer-social h2 {
-    color: #fff;
 }
 
 .footer-social a {
@@ -463,32 +472,34 @@ a {
     border: 1px solid #262626;
 }
 
-.conclusion-start,
-.conclusion-end a {
+.footer-conclusion-start,
+.footer-conclusion-end a {
     color: #999999;
 }
 
-.conclusion-end a:nth-child(1),
-.conclusion-end a:nth-child(2) {
+.footer-conclusion-end a:nth-child(1),
+.footer-conclusion-end a:nth-child(2) {
     border-right: 1px solid #99999927;
     padding-right: 8px;
 }
 
-.conclusion-end .separator {
+.footer-conclusion-end .separator {
     width: 1px;
     height: 100%;
     background-color: #999999;
 }
 
+/* start media footer */
 @media screen and (max-width: 575px) {
+    .footer .row::after {
+        width: 95%;
+        margin: 50px auto 20px auto;
+    }
+
     .conclusion {
         justify-content: stretch;
         flex-direction: column;
         gap: 10px;
     }
-
-    .footer .row::after {
-        width: 95%;
-        margin: 50px auto 20px auto;
-    }
 }
+/* end media footer */
