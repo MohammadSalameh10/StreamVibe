@@ -58,11 +58,15 @@ section p {
     padding: 60px 0;
 }
 
-.support-image{
-    width: fit-content;
+.support-image-cover{
     background-color:#0F0F0F;
     border: 6px solid #262626;
     border-radius: 5px;
+    width: fit-content;
+}
+
+.support-image-cover img {
+    width: 100%;
 }
 
 .support-form {
@@ -105,6 +109,32 @@ section p {
 
 .support-form button:hover {
     background-color: #E50000;
+}
+
+/* start media support */
+@media screen and (max-width: 991px) {
+    .support-image{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .support-description{
+        text-align: center;
+    }
+    .support-image{
+       padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .send-massage{
+    flex-direction: column;
+    
+    }
+
+    .support-form button {
+      width: 100%;
+    }
 }
 
 /* questions css */
