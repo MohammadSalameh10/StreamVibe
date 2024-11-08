@@ -143,39 +143,110 @@ section p {
 
 /* compare-plans css */
 
-.compare-plans-table{
- height: 800px;
- padding: 50px 0;
+.compare-plans {
+    height: 1350px;
 }
 
-.compare-plans-table table{
+.compare-plans-table {
+    padding: 50px 0;
+}
+
+.compare-plans-table table {
     border-color: #262626;
     height: 100%;
 }
 
-.compare-plans-table th
-,.compare-plans-table td{
-   width: calc(100% / 4);
-   height: calc(100% / 11);
-   font-size: 14px;
-   padding:20px 0px 20px 20px;
+.compare-plans-table th,
+.compare-plans-table td {
+    width: calc(100% / 4);
+    height: calc(100% / 11);
+    font-size: 13px;
+    height: 100px;
+    padding: 20px 0px 20px 15px;
 }
 
-.compare-plans-table th{
-  background-color:#0F0F0F ;
-  padding-bottom: 20px;
-   }
+.compare-plans-table th {
+    background-color: #0F0F0F;
+    padding-bottom: 20px;
+}
 
-   .compare-plans-table span{
+.compare-plans-table span {
     font-size: 10px;
     padding: 2px 9px;
     border-radius: 2px;
     background-color: #E50000;
-   }
-
-.compare-plans-table td{
- color: #999999;
 }
+
+.compare-plans-table td {
+    color: #999999;
+}
+
+.plan-type-btn {
+    padding: 20px 0;
+}
+
+.plan-type-btn ul {
+    background-color: #0F0F0F;
+    border: 1px solid #262626;
+    padding: 15px 0;
+    border-radius: 7px;
+}
+
+.plan-type-btn .active{
+    background-color: #1F1F1F;
+    padding: 15px 15px;
+    border-radius: 7px;
+}
+
+.features-plan{
+    padding: 20px 20px;
+    background-color: #0F0F0F;
+    border: 1px solid #262626;
+    border-radius: 7px;
+}
+.features-plan h4{
+    color: #999999;
+    font-size: 16px;
+}
+
+.features-plan p{
+    color: #fff;
+}
+/* start media compare-plans */
+@media screen and (max-width: 767px) {
+
+    .compare-plans-table th,
+    .compare-plans-table td {
+        font-size: 10px;
+    }
+
+    .compare-plans-table span {
+        font-size: 7px;
+        padding: 2px 5px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .compare-plans {
+        height: 900px;
+    }
+
+    .compare-plans-table {
+        display: none;
+    }
+
+    .compare-plans-pagination{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 326px) {
+.feature-name{
+    margin-top: 19.19px;
+}
+}
+
+/* end media compare-plans */
 
 /* movies-start-plan css */
 .movies-start-plan {
@@ -285,15 +356,15 @@ section p {
         margin: 50px auto 20px auto;
     }
 
-    .footer-conclusion{
+    .footer-conclusion {
         justify-content: stretch;
         flex-direction: column;
         gap: 10px;
         text-align: center;
     }
 
-    .footer-conclusion nav{
-      justify-content: center;
+    .footer-conclusion nav {
+        justify-content: center;
     }
 }
 
