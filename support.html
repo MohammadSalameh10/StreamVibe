@@ -60,170 +60,230 @@
     <!-- start main -->
     <main>
 
-<section>
+        <section class="support">
+            <div class="container">
+                <div class="row">
+                    <div class="support-description col-lg-5">
+                        <h1>Welcome to our support page!</h1>
+                        <p>We're here to help you with any problems you may be having with our product.</p>
+                        <div class="support-image">
+                            <img src="./assets/img/support/movies.png"/>
+                        </div>
+                    </div>
+                    <div class="support-form col-lg-6 offset-1">
+                        <form>
+                            <div class="row pb-5">
+                                <div class="col-6">
+                                    <label for="first_name" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="first_name" aria-describedby="nameHelp"
+                                        required placeholder="Enter First Name" />
+                                </div>
+                                <div class="col-6">
+                                    <label for="last_name" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="last_name" aria-describedby="nameHelp"
+                                        required placeholder="Enter Last Name" />
+                                </div>
+                            </div>
+                            <div class="row pb-5">
+                                <div class="col-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        required placeholder="Enter your Email" />
+                                </div>
 
-</section>
+                                <div class="col-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone"
+                                        aria-describedby="phoneHelp" required placeholder="Enter Phone Number" />
+                                </div>
+                            </div>
+                            <div class="pb-5">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" aria-describedby="messageHelp"
+                                    required placeholder="Enter your Message"></textarea>
+                            </div>
+                            <div class="send-massage d-flex justify-content-between align-items-center">
+                                <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            I agree with Terms of Use and Privacy Policy
+                                        </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
 
-<section class="questions">
-    <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="questions-description col-xl-10 col-md-9 col-sm-7 ">
-                <h2>Frequently Asked Questions</h2>
-                <p>Got questions? We've got answers! Check out our FAQ section to find answers to the most
-                    common questions about StreamVibe.</p>
-            </div>
-            <div class="ask-question-btn col-xl-2 col-md-3 col-sm-5 p-3 rounded-2">
-                <a href="#">Ask a Question</a>
-            </div>
-        </div>
-        <div class="questions-place d-flex align-items-center gap-5 py-5">
-            <div class="questions-item col-lg-6">
-                <div class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
-                    <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
-                        <span>01</span>
-                        <div class="question-answer d-flex flex-column">
-                            <h3 class="fs-6">What is StreamVibe?</h3>
-                            <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
-                                and shows on
-                                demand.StreamVibe is a streaming service that allows you to watch movies and
-                                shows
-                                on
-                                demand.</p>
-                        </div>
+                        </form>
                     </div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
-                    <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
-                        <span>02</span>
-                        <div class="question-answer d-flex flex-column">
-                            <h3 class="fs-6">How much does StreamVibe cost?</h3>
-                            <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
-                                and shows on
-                                demand.StreamVibe is a streaming service that allows you to watch movies and
-                                shows
-                                on
-                                demand.</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
-                    <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
-                        <span>03</span>
-                        <div class="question-answer d-flex flex-column">
-                            <h3 class="fs-6">What content is available on StreamVibe?</h3>
-                            <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
-                                and shows on
-                                demand.StreamVibe is a streaming service that allows you to watch movies and
-                                shows
-                                on
-                                demand.</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="question d-flex justify-content-between align-items-center">
-                    <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
-                        <span>04</span>
-                        <div class="question-answer d-flex flex-column">
-                            <h3 class="fs-6">How can I watch StreamVibe?</h3>
-                            <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
-                                and shows on
-                                demand.StreamVibe is a streaming service that allows you to watch movies and
-                                shows
-                                on
-                                demand.</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-plus"></i>
                 </div>
             </div>
-            <div class="questions-item col-lg-6">
-                <div class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
-                    <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
-                        <span>05</span>
-                        <div class="question-answer d-flex flex-column">
-                            <h3 class="fs-6">How do I sign up for StreamVibe?</h3>
-                            <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
-                                and shows on
-                                demand.StreamVibe is a streaming service that allows you to watch movies and
-                                shows
-                                on
-                                demand.</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
-                    <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
-                        <span>06</span>
-                        <div class="question-answer d-flex flex-column">
-                            <h3 class="fs-6">What is the StreamVibe free trial?</h3>
-                            <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
-                                and shows on
-                                demand.StreamVibe is a streaming service that allows you to watch movies and
-                                shows
-                                on
-                                demand.</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
-                    <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
-                        <span>07</span>
-                        <div class="question-answer d-flex flex-column">
-                            <h3 class="fs-6">How do I contact StreamVibe customer support?</h3>
-                            <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
-                                and shows on
-                                demand.StreamVibe is a streaming service that allows you to watch movies and
-                                shows
-                                on
-                                demand.</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="question d-flex justify-content-between align-items-center">
-                    <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
-                        <span>08</span>
-                        <div class="question-answer d-flex flex-column">
-                            <h3 class="fs-6">What are the StreamVibe payment methods?</h3>
-                            <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
-                                and shows on
-                                demand.StreamVibe is a streaming service that allows you to watch movies and
-                                shows
-                                on
-                                demand.</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section class="movies-start-plan">
-    <div class="container">
-        <div class="start-plan-background position-relative">
-            <div class="start-plan-item position-absolute d-flex justify-content-center">
-                <div class="row align-items-center">
-                    <div class="start-plan-description col-xl-10 col-md-9 col-sm-7">
-                        <h2>Start your free trial today!</h2>
-                        <p>This is a clear and concise call to action that encourages users to sign up for a
-                            free
-                            trial of StreamVibe.</p>
+        <section class="questions">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="questions-description col-xl-10 col-md-9 col-sm-7 ">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Got questions? We've got answers! Check out our FAQ section to find answers to the most
+                            common questions about StreamVibe.</p>
                     </div>
-                    <div class="start-plan-btn col-xl-2 col-md-3 col-sm-5">
-                        <a href="#">Start a Free Trail</a>
+                    <div class="ask-question-btn col-xl-2 col-md-3 col-sm-5 p-3 rounded-2">
+                        <a href="#">Ask a Question</a>
+                    </div>
+                </div>
+                <div class="questions-place d-flex align-items-center gap-5 py-5">
+                    <div class="questions-item col-lg-6">
+                        <div
+                            class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
+                            <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
+                                <span>01</span>
+                                <div class="question-answer d-flex flex-column">
+                                    <h3 class="fs-6">What is StreamVibe?</h3>
+                                    <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
+                                        and shows on
+                                        demand.StreamVibe is a streaming service that allows you to watch movies and
+                                        shows
+                                        on
+                                        demand.</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div
+                            class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
+                            <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
+                                <span>02</span>
+                                <div class="question-answer d-flex flex-column">
+                                    <h3 class="fs-6">How much does StreamVibe cost?</h3>
+                                    <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
+                                        and shows on
+                                        demand.StreamVibe is a streaming service that allows you to watch movies and
+                                        shows
+                                        on
+                                        demand.</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div
+                            class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
+                            <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
+                                <span>03</span>
+                                <div class="question-answer d-flex flex-column">
+                                    <h3 class="fs-6">What content is available on StreamVibe?</h3>
+                                    <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
+                                        and shows on
+                                        demand.StreamVibe is a streaming service that allows you to watch movies and
+                                        shows
+                                        on
+                                        demand.</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="question d-flex justify-content-between align-items-center">
+                            <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
+                                <span>04</span>
+                                <div class="question-answer d-flex flex-column">
+                                    <h3 class="fs-6">How can I watch StreamVibe?</h3>
+                                    <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
+                                        and shows on
+                                        demand.StreamVibe is a streaming service that allows you to watch movies and
+                                        shows
+                                        on
+                                        demand.</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="questions-item col-lg-6">
+                        <div
+                            class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
+                            <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
+                                <span>05</span>
+                                <div class="question-answer d-flex flex-column">
+                                    <h3 class="fs-6">How do I sign up for StreamVibe?</h3>
+                                    <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
+                                        and shows on
+                                        demand.StreamVibe is a streaming service that allows you to watch movies and
+                                        shows
+                                        on
+                                        demand.</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div
+                            class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
+                            <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
+                                <span>06</span>
+                                <div class="question-answer d-flex flex-column">
+                                    <h3 class="fs-6">What is the StreamVibe free trial?</h3>
+                                    <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
+                                        and shows on
+                                        demand.StreamVibe is a streaming service that allows you to watch movies and
+                                        shows
+                                        on
+                                        demand.</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div
+                            class="question question-after d-flex justify-content-between align-items-center pb-3 position-relative">
+                            <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
+                                <span>07</span>
+                                <div class="question-answer d-flex flex-column">
+                                    <h3 class="fs-6">How do I contact StreamVibe customer support?</h3>
+                                    <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
+                                        and shows on
+                                        demand.StreamVibe is a streaming service that allows you to watch movies and
+                                        shows
+                                        on
+                                        demand.</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="question d-flex justify-content-between align-items-center">
+                            <div class="question-number-answer d-flex justify-content-center align-items-center gap-3">
+                                <span>08</span>
+                                <div class="question-answer d-flex flex-column">
+                                    <h3 class="fs-6">What are the StreamVibe payment methods?</h3>
+                                    <p class="d-none">StreamVibe is a streaming service that allows you to watch movies
+                                        and shows on
+                                        demand.StreamVibe is a streaming service that allows you to watch movies and
+                                        shows
+                                        on
+                                        demand.</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+
+        <section class="movies-start-plan">
+            <div class="container">
+                <div class="start-plan-background position-relative">
+                    <div class="start-plan-item position-absolute d-flex justify-content-center">
+                        <div class="row align-items-center">
+                            <div class="start-plan-description col-xl-10 col-md-9 col-sm-7">
+                                <h2>Start your free trial today!</h2>
+                                <p>This is a clear and concise call to action that encourages users to sign up for a
+                                    free
+                                    trial of StreamVibe.</p>
+                            </div>
+                            <div class="start-plan-btn col-xl-2 col-md-3 col-sm-5">
+                                <a href="#">Start a Free Trail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <!-- end main -->

@@ -54,6 +54,59 @@ section p {
 
 /* end media navbar */
 
+.support {
+    padding: 60px 0;
+}
+
+.support-image{
+    width: fit-content;
+    background-color:#0F0F0F;
+    border: 6px solid #262626;
+    border-radius: 5px;
+}
+
+.support-form {
+    background-color: #0F0F0F;
+    border: 1px solid #262626;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.support-form input,
+.support-form textarea {
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+}
+
+.support-form .form-control {
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.support-form input::placeholder,
+.support-form textarea::placeholder {
+    color: #999999;
+}
+
+.form-check .form-check-label {
+    color: #999999;
+}
+
+.support-form button {
+    background-color: #E50000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 15px 15px;
+}
+
+.support-form button:hover {
+    background-color: #E50000;
+}
+
 /* questions css */
 .questions .ask-question-btn {
     background-color: #E50000;
@@ -67,10 +120,10 @@ section p {
 
 .question-after::after {
     content: "";
-  width: 100%;
+    width: 100%;
     height: 1px;
     position: absolute;
-    background: linear-gradient(90deg, rgba(229,0,0,0) 0%, rgba(229,0,0,1) 17%, rgba(229,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(229, 0, 0, 0) 0%, rgba(229, 0, 0, 1) 17%, rgba(229, 0, 0, 0) 100%);
     bottom: 10%;
 }
 
@@ -212,15 +265,15 @@ section p {
         margin: 50px auto 20px auto;
     }
 
-    .footer-conclusion{
+    .footer-conclusion {
         justify-content: stretch;
         flex-direction: column;
         gap: 10px;
         text-align: center;
     }
 
-    .footer-conclusion nav{
-      justify-content: center;
+    .footer-conclusion nav {
+        justify-content: center;
     }
 }
 
