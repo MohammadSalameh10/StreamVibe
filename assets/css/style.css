@@ -41,7 +41,7 @@ section p {
 }
 
 .header-logo {
-    width:24%;
+    width: 24%;
     margin-top: 100px;
 }
 
@@ -69,6 +69,7 @@ section p {
         margin-top: 260px;
     }
 }
+
 /* end media header */
 
 /* navbar css */
@@ -94,6 +95,7 @@ section p {
         display: none;
     }
 }
+
 /* end media navbar */
 
 /* movies-categories css */
@@ -211,6 +213,7 @@ section p {
         width: calc((100% - 10px) / 2);
     }
 }
+
 /* end media movies-categories */
 
 /* viewing-platforms css */
@@ -253,6 +256,7 @@ section p {
         width: 100%;
     }
 }
+
 /* end media viewing-platforms */
 
 /* questions css */
@@ -264,6 +268,15 @@ section p {
 .questions .ask-question-btn a {
     color: #fff;
     font-size: 13px;
+}
+
+.question-after::after {
+    content: "";
+  width: 100%;
+    height: 1px;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(229,0,0,0) 0%, rgba(229,0,0,1) 17%, rgba(229,0,0,0) 100%);
+    bottom: 10%;
 }
 
 .question span {
@@ -293,6 +306,7 @@ section p {
         margin-left: 12px;
     }
 }
+
 /* end media questions */
 
 /* movies-watching-plans css */
@@ -387,6 +401,7 @@ section p {
         padding: 12px 18px;
     }
 }
+
 /* end media movies-watching-plans */
 
 /* movies-start-plan css */
@@ -439,6 +454,7 @@ section p {
         text-align: center;
     }
 }
+
 /* end media movies-start-plan */
 
 /* footer css */
@@ -496,10 +512,16 @@ section p {
         margin: 50px auto 20px auto;
     }
 
-    .conclusion {
+    .footer-conclusion{
         justify-content: stretch;
         flex-direction: column;
         gap: 10px;
+        text-align: center;
+    }
+
+    .footer-conclusion nav{
+      justify-content: center;
     }
 }
+
 /* end media footer */
