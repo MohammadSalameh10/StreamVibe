@@ -380,7 +380,7 @@ section p {
 /* start media movies-watching-plans */
 @media screen and (max-width: 1199px) {
     .start-plan a {
-        padding: 12px 20px;
+        padding: 12px 18px;
     }
 }
 
@@ -393,12 +393,6 @@ section p {
 @media screen and (max-width: 575px) {
     .choose-plan-duration {
         margin-left: 12px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .start-plan a {
-        padding: 12px 18px;
     }
 }
 
