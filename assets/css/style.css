@@ -8,10 +8,6 @@ a {
     text-decoration: none;
 }
 
-:root {
-    --main-font: 'manrope';
-}
-
 section,
 header,
 footer {
@@ -25,6 +21,11 @@ h1 {
 
 section p {
     color: #999999;
+}
+
+
+:root {
+    --main-font: 'manrope';
 }
 
 /* header css */
