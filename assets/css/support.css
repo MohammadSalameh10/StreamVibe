@@ -87,11 +87,16 @@ section p {
     border: 1px solid #262626;
     border-radius: 5px;
     padding: 10px 15px;
+    color: #fff;
 }
 
 .support-form input::placeholder,
 .support-form textarea::placeholder {
     color: #999999;
+}
+
+.form-check .form-check-input {
+    cursor: pointer;
 }
 
 .form-check .form-check-label {
@@ -112,6 +117,13 @@ section p {
 }
 
 /* start media support */
+
+@media screen and (max-width: 1199px) {
+    .form-check .form-check-label {
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .support-image{
         display: flex;
