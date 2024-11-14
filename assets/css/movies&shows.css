@@ -61,7 +61,6 @@ section p {
 }
 
 .movies .movies-title {
-    position: absolute;
     top: 35px;
     background-color: #E50000;
     padding: 5px 10px;
@@ -140,7 +139,7 @@ section p {
     border-radius: 10px;
 }
 
-.card-body {
+.movies .card-body {
     color: #fff;
     cursor: pointer;
 }
@@ -169,14 +168,11 @@ section p {
     padding: 7px 10px;
 }
 
-.card-body .stars i:nth-child(1),
-.card-body .stars i:nth-child(2),
-.card-body .stars i:nth-child(3),
-.card-body .stars i:nth-child(4) {
+.star-active {
     color: #E50000;
 }
 
-.card-stars .stars i:nth-child(5) {
+.star-half-active {
     background: linear-gradient(to right, #E50000 50%, #999999 50%);
     background-clip: text;
     color: transparent;
@@ -228,6 +224,7 @@ section p {
     .movie-category .card-must {
         width: calc((100% - 10px) / 2);
     }
+
     .movie-category .card-must:nth-child(3) {
         display: none;
     }
@@ -239,7 +236,7 @@ section p {
     }
 
     .movie-category .card {
-        width: calc((100% - 29px) / 3);
+        width: calc((100% - 20px) / 3);
     }
 
     .movie-category .card-top,
@@ -258,7 +255,7 @@ section p {
     }
 
     .movie-category .card-must {
-        width: calc((100% - 10px ) / 2);
+        width: calc((100% - 10px) / 2);
     }
 
     .card-body .duration-movie {
@@ -295,6 +292,199 @@ section p {
 }
 
 /* end media movies */
+
+/* shows css */
+.shows {
+    padding: 50px 0px;
+}
+
+.shows .shows-title {
+    top: 35px;
+    background-color: #E50000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.shows .shows-border {
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.shows-categories-pagination {
+    background-color: #0F0F0F;
+    border: 1px solid #1F1F1F;
+    border-radius: 7px;
+    width: fit-content;
+}
+
+.shows-categories-pagination ul i {
+    background-color: #1A1A1A;
+    border: 1px solid #1F1F1F;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show-category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.show-category .card {
+    width: calc((100% - 40px) / 5);
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    border: 1px solid #262626;
+}
+
+.show-category .card-top,
+.show-category .card-must,
+.show-category .card-trend,
+.show-category .card-releases {
+    width: calc((100% - 40px) / 4);
+}
+
+.show-category .card img {
+    border-radius: 10px;
+}
+
+
+.shows .card-body {
+    color: #fff;
+    cursor: pointer;
+}
+
+.shows .card-body-title span:first-child {
+    font-size: 10px;
+    background-color: #E50000;
+    padding: 2px 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.shows .card-body .duration-movie,
+.shows .card-body .view-number,
+.shows .card-body .duration-releases,
+.shows .card-body .view-stars {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 51px;
+    padding: 2px 5px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.shows .card-body .duration-releases {
+    padding: 7px 10px;
+}
+
+
+
+/* start media shows */
+
+@media screen and (max-width: 1199px) {
+    .show-category .card-must {
+        width: calc((100% - 20px) / 3);
+    }
+
+    .show-category .card-must:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #horror {
+        display: none;
+    }
+
+    .show-category .card {
+        width: calc((100% - 30px) / 4);
+    }
+
+    .show-category .card-trend,
+    .show-category .card-releases {
+        width: calc((100% - 20px) / 3);
+    }
+
+.show-category .card-trend:nth-child(4),
+    .show-category .card-releases:nth-child(4) {
+        display: none;
+    }
+
+    .show-category .card-must {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .show-category .card-must:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #drama {
+        display: none;
+    }
+
+    .show-category .card {
+        width: calc((100% - 20px) / 3);
+    }
+
+    .show-category .card-top,
+    .show-category .card-must {
+        width: calc((100% - 20px) / 3);
+    }
+
+    .show-category .card-trend,
+    .show-category .card-releases {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .show-category .card-trend:nth-child(3),
+    .show-category .card-releases:nth-child(3) {
+        display: none;
+    }
+
+    .show-category .card-must {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .shows .card-body .duration-movie {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .shows {
+        display: none;
+    }
+
+    .shows-categories-pagination {
+        display: none !important;
+    }
+
+    .shows-categories-description {
+        text-align: center;
+    }
+
+    .shows-categories-pagination-end {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #comedy {
+        display: none;
+    }
+
+    .show-category .card {
+        width: calc((100% - 40px) / 2);
+    }
+}
+
+/* end media shows */
 
 /* movies-start-plan css */
 .movies-start-plan {
