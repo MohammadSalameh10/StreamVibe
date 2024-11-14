@@ -54,6 +54,131 @@ section p {
 
 /* end media navbar */
 
+/* movies css */
+
+.movies {
+    padding: 50px 0px;
+}
+
+.movies .movies-title {
+    position: absolute;
+    top: 35px;
+    background-color: #E50000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.movies .movies-border {
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.movies-categories-pagination {
+    background-color: #0F0F0F;
+    border: 1px solid #1F1F1F;
+    border-radius: 7px;
+    width: fit-content;
+}
+
+.movies-categories-pagination ul i {
+    background-color: #1A1A1A;
+    border: 1px solid #1F1F1F;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list-active {
+    background-color: #E50000;
+    width: 15px;
+}
+
+.list-non-active {
+    background-color: #333333;
+    width: 10px;
+}
+
+.list-active,
+.list-non-active {
+    height: 3px;
+    border-radius: 1px;
+}
+
+.movie-category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.movie-category .card {
+    width: calc((100% - 40px) / 5);
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    border: 1px solid #262626;
+}
+
+.movie-category .card-top,
+.movie-category .card-must {
+    width: calc((100% - 40px) / 4);
+}
+
+.movie-category .card img {
+    border-radius: 10px;
+}
+
+.images-cover {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.032) 0%, #1414148d 100%);
+    left: 0;
+    border-radius: 10px;
+}
+
+.card-body {
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-body-title span:first-child {
+    font-size: 10px;
+    background-color: #E50000;
+    padding: 2px 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.card-body .duration-movie,
+.card-body .view-number,
+.card-body .duration-releases,
+.card-body .view-stars {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 51px;
+    padding: 2px 5px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.card-body .duration-releases {
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.card-body .stars i:nth-child(1),
+.card-body .stars i:nth-child(2),
+.card-body .stars i:nth-child(3),
+.card-body .stars i:nth-child(4) {
+    color: #E50000;
+}
+
+.card-stars .stars i:nth-child(5) {
+    background: linear-gradient(to right, #E50000 50%, #999999 50%);
+    background-clip: text;
+    color: transparent;
+}
+
 /* movies-start-plan css */
 .movies-start-plan {
     padding: 50px 20px;
@@ -162,15 +287,15 @@ section p {
         margin: 50px auto 20px auto;
     }
 
-    .footer-conclusion{
+    .footer-conclusion {
         justify-content: stretch;
         flex-direction: column;
         gap: 10px;
         text-align: center;
     }
 
-    .footer-conclusion nav{
-      justify-content: center;
+    .footer-conclusion nav {
+        justify-content: center;
     }
 }
 
