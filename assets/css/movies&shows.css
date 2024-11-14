@@ -272,8 +272,13 @@ section p {
         display: none !important;
     }
 
-    .movies-categories-description {
-        text-align: center;
+    .movie-category .card {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .movie-category .card-top,
+    .movie-category .card-must {
+        width: calc((100% - 10px) / 2);
     }
 
     .movies-categories-pagination-end {
@@ -281,13 +286,31 @@ section p {
     }
 }
 
-@media screen and (max-width: 480px) {
-    #comedy {
-        display: none;
+@media screen and (max-width: 500px) {
+    .card-must .card-body {
+        justify-content: center !important;
+        align-items: start !important;
+        flex-direction: column;
+        gap: 5px;
     }
+}
 
-    .movie-category .card {
-        width: calc((100% - 40px) / 2);
+@media screen and (max-width: 422px) {
+    .card-body .duration-releases {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 353px) {
+   .card-trend .card-body{
+    justify-content: center !important;
+    align-items: start !important;
+    flex-direction: column;
+    gap: 5px;
+   }
+   
+    .card-body .duration-releases {
+        font-size: 7px;
     }
 }
 
@@ -409,7 +432,7 @@ section p {
         width: calc((100% - 20px) / 3);
     }
 
-.show-category .card-trend:nth-child(4),
+    .show-category .card-trend:nth-child(4),
     .show-category .card-releases:nth-child(4) {
         display: none;
     }
@@ -465,24 +488,15 @@ section p {
         display: none !important;
     }
 
-    .shows-categories-description {
-        text-align: center;
+    .shows-categories-pagination-end {
+        display: flex !important;
     }
 
-    .shows-categories-pagination-end {
+    .movies-shows {
         display: flex !important;
     }
 }
 
-@media screen and (max-width: 480px) {
-    #comedy {
-        display: none;
-    }
-
-    .show-category .card {
-        width: calc((100% - 40px) / 2);
-    }
-}
 
 /* end media shows */
 
@@ -538,6 +552,36 @@ section p {
 }
 
 /* end media movies-start-plan */
+
+/* movies-shows */
+
+.movies-shows .movies-shows-btn {
+    background-color: #0F0F0F;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.movies-shows .movies-shows-btn .active {
+    background-color: #1F1F1F;
+    padding: 10px 30px;
+    border-radius: 6px;
+}
+
+.movies-shows .movies-shows-btn .active a {
+    color: #fff;
+}
+
+.movies-shows .movies-shows-btn a {
+    color: #999999;
+}
+
+.movies-shows .card-body {
+    color: #fff;
+    cursor: pointer;
+}
+
+
 
 /* footer css */
 .footer {
