@@ -124,6 +124,10 @@ section p {
     width: calc((100% - 40px) / 4);
 }
 
+.movie-category .card-releases {
+    width: calc((100% - 40px) / 5);
+}
+
 .movie-category .card img {
     border-radius: 10px;
 }
@@ -158,12 +162,11 @@ section p {
     border-radius: 51px;
     padding: 2px 5px;
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .card-body .duration-releases {
-    padding: 5px 15px;
-    font-size: 14px;
+    padding: 7px 10px;
 }
 
 .card-body .stars i:nth-child(1),
@@ -178,6 +181,120 @@ section p {
     background-clip: text;
     color: transparent;
 }
+
+/* start media movies */
+
+@media screen and (max-width: 1199px) {
+
+    .movie-category .card-trend,
+    .movie-category .card-releases {
+        width: calc((100% - 30px) / 4);
+    }
+
+    .movie-category .card-trend:nth-child(5),
+    .movie-category .card-releases:nth-child(5) {
+        display: none;
+    }
+
+    .movie-category .card-must {
+        width: calc((100% - 20px) / 3);
+    }
+
+    .movie-category .card-must:nth-child(4) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    #horror {
+        display: none;
+    }
+
+    .movie-category .card {
+        width: calc((100% - 30px) / 4);
+    }
+
+    .movie-category .card-trend,
+    .movie-category .card-releases {
+        width: calc((100% - 20px) / 3);
+    }
+
+    .movie-category .card-trend:nth-child(4),
+    .movie-category .card-releases:nth-child(4) {
+        display: none;
+    }
+
+    .movie-category .card-must {
+        width: calc((100% - 10px) / 2);
+    }
+    .movie-category .card-must:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #drama {
+        display: none;
+    }
+
+    .movie-category .card {
+        width: calc((100% - 29px) / 3);
+    }
+
+    .movie-category .card-top,
+    .movie-category .card-must {
+        width: calc((100% - 20px) / 3);
+    }
+
+    .movie-category .card-trend,
+    .movie-category .card-releases {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .movie-category .card-trend:nth-child(3),
+    .movie-category .card-releases:nth-child(3) {
+        display: none;
+    }
+
+    .movie-category .card-must {
+        width: calc((100% - 10px ) / 2);
+    }
+
+    .card-body .duration-movie {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .movies {
+        display: none;
+    }
+
+    .movies-categories-pagination {
+        display: none !important;
+    }
+
+    .movies-categories-description {
+        text-align: center;
+    }
+
+    .movies-categories-pagination-end {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #comedy {
+        display: none;
+    }
+
+    .movie-category .card {
+        width: calc((100% - 40px) / 2);
+    }
+}
+
+/* end media movies */
 
 /* movies-start-plan css */
 .movies-start-plan {
