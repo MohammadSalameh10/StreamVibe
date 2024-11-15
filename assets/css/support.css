@@ -46,9 +46,13 @@ section p {
 }
 
 /* start media navbar */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .navbar-search-notifications img {
         display: none;
+    }
+
+    .navbar-nav .nav-link.active {
+        background-color: transparent;
     }
 }
 
@@ -58,8 +62,8 @@ section p {
     padding: 60px 0;
 }
 
-.support-image-cover{
-    background-color:#0F0F0F;
+.support-image-cover {
+    background-color: #0F0F0F;
     border: 6px solid #262626;
     border-radius: 5px;
     width: fit-content;
@@ -125,27 +129,28 @@ section p {
 }
 
 @media screen and (max-width: 991px) {
-    .support-image{
+    .support-image {
         display: flex;
         justify-content: center;
     }
-    
-    .support-description{
+
+    .support-description {
         text-align: center;
     }
-    .support-image{
-       padding-bottom: 20px;
+
+    .support-image {
+        padding-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .send-massage{
-    flex-direction: column;
-    
+    .send-massage {
+        flex-direction: column;
+
     }
 
     .support-form button {
-      width: 100%;
+        width: 100%;
     }
 }
 
