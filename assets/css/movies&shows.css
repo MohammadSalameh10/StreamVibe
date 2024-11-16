@@ -562,11 +562,16 @@ section p {
         display: none !important;
     }
 
-    .shows-categories-pagination-end {
-        display: flex !important;
+    .show-category .card {
+        width: calc((100% - 10px) / 2);
     }
 
-    .movies-shows {
+    .show-category .card-top,
+    .show-category .card-must {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .shows-categories-pagination-end {
         display: flex !important;
     }
 }
@@ -600,6 +605,12 @@ section p {
 .movies-shows .card-body {
     color: #fff;
     cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+    .movies-shows {
+        display: flex !important;
+    }
 }
 
 /* movies-start-plan css */
