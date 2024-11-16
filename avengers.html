@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avengers</title>
+    <link rel="icon" href="./assets/img/navbar/logo.svg" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- page css -->
+    <link rel="stylesheet" href="./assets/css/avengers.css" />
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/navbar/logo.svg">
+                    StreamVibe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./movies&shows.html">Movies & Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./support.html">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./subscription.html">Subscriptions</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-search-notifications d-flex gap-4">
+                        <img src="./assets/img/navbar/serach.svg" />
+                        <img src="./assets/img/navbar/notifications.svg" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+
+        <section class="movies-interface">
+            <div class="container">
+                <div class="movies-interface-cover position-relative">
+                    <div class="slider-background position-absolute"></div>
+                    <img src="./assets/img/movies&shows/images/avengers_endgame.png" class="d-block w-100"/>
+                    <div class="carousel-caption d-block">
+                        <h1 class="fs-3">Avengers : Endgame</h1>
+                        <p>With the help of remaining allies, the Avengers must assemble once more in order to
+                            undo Thanos's actions and undo the chaos to the universe, no matter what
+                            consequences may be in store, and no matter who they face... Avenge the fallen.</p>
+                        <div class="movie-items d-flex justify-content-center pb-3 gap-2">
+                            <div class="play-now-btn d-flex align-items-center gap-2">
+                                <img src="./assets/img/header/play.svg">
+                                <a href="avengers.html">Play Now</a>
+                            </div>
+                            <div class="item d-flex align-items-center gap-2">
+                                <img src="./assets/img/movies&shows/item/plus.svg" />
+                                <img src="./assets/img/movies&shows/item/like.svg" />
+                                <img src="./assets/img/movies&shows/item/sound.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section></section>
+
+        <section class="movies-start-plan">
+            <div class="container">
+                <div class="start-plan-background position-relative">
+                    <div class="start-plan-item position-absolute d-flex justify-content-center">
+                        <div class="row align-items-center">
+                            <div class="start-plan-description col-xl-10 col-md-9 col-sm-7">
+                                <h2>Start your free trial today!</h2>
+                                <p>This is a clear and concise call to action that encourages users to sign up for a
+                                    free
+                                    trial of StreamVibe.</p>
+                            </div>
+                            <div class="start-plan-btn col-xl-2 col-md-3 col-sm-5">
+                                <a href="#">Start a Free Trail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-item col-lg-2 col-6 d-flex flex-column">
+                    <h2 class="fs-4">Home</h2>
+                    <nav class="d-flex flex-column">
+                        <a href="index.html#categories">Categories</a>
+                        <a href="index.html#devices">Devices</a>
+                        <a href="index.html#pricing">Pricing</a>
+                        <a href="index.html#faq">FAQ</a>
+                    </nav>
+                </div>
+                <div class="footer-item col-lg-2 col-6 d-flex flex-column">
+                    <h2 class="fs-4">Movies</h2>
+                    <nav class="d-flex flex-column">
+                        <a href="#movies_genres">Genres</a>
+                        <a href="#movies_trending">Trending</a>
+                        <a href="#movies_new_releases">New Release</a>
+                        <a href="#movies_popular">Popular</a>
+                    </nav>
+                </div>
+                <div class="footer-item col-lg-2 col-6 d-flex flex-column mt-lg-0 mt-3">
+                    <h2 class="fs-4">Shows</h2>
+                    <nav class="d-flex flex-column">
+                        <a href="#shows_genres">Genres</a>
+                        <a href="#shows_trending">Trending</a>
+                        <a href="#shows_new_releases">New Release</a>
+                        <a href="#shows_popular">Popular</a>
+                    </nav>
+                </div>
+                <div class="footer-item col-lg-2 col-6 d-flex flex-column mt-lg-0 mt-3">
+                    <h2 class="fs-4">Support</h2>
+                    <nav class="d-flex flex-column">
+                        <a href="support.html#support">Contact Us</a>
+                    </nav>
+                </div>
+                <div class="footer-item col-lg-2 col-6 d-flex flex-column mt-lg-0 mt-3">
+                    <h2 class="fs-4">Subscription</h2>
+                    <nav class="d-flex flex-column">
+                        <a href="subscription.html#plans">Plans</a>
+                        <a href="subscription.html#features">Features</a>
+                    </nav>
+                </div>
+                <div class="footer-social col-lg-2 col-6 d-flex flex-column mt-lg-0 mt-3">
+                    <h2 class="fs-4">Connect Us</h2>
+                    <nav class="d-flex gap-3 align-items-center ">
+                        <a href="https://www.facebook.com/mohammad.salameh2004" target="_blank"><img
+                                src="./assets/img/social/facebook.svg" /></a>
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2FMohammadSa87096"
+                            target="_blank"><img src="./assets/img/social/twitter.svg" /></a>
+                        <a href="https://www.linkedin.com/in/mohammad-salameh10?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"><img src="./assets/img/social/linkedin.svg" /></a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-conclusion d-flex justify-content-between">
+                <div class="footer-conclusion-start">
+                    <span>@2023 streamvib, All Rights Reserved</span>
+                </div>
+                <div class="footer-conclusion-end">
+                    <nav class="d-flex gap-3">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- page js -->
+    <script src="./assets/js/avengers.js"></script>
+</body>
+
+</html>
