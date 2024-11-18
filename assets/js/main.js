@@ -13,7 +13,7 @@ show.forEach((item, index) => {
 let monthly = document.querySelector('.choose-plan-duration .monthly');
 let yearly = document.querySelector('.choose-plan-duration .yearly');
 let price = document.querySelectorAll(".price");
-console.log(price);
+
 monthly.addEventListener('click', () => {
     yearly.classList.remove('active');
     monthly.classList.add('active');
