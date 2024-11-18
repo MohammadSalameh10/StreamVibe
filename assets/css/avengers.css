@@ -171,7 +171,7 @@ padding: 30px;
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    color: #E50000;
+    color: #fff;
 }
 
 .prev,
@@ -259,6 +259,22 @@ padding: 30px;
     padding: 5px 10px; 
 
 }
+/* start media movies-information-end */
+@media screen and (max-width: 1199px) {
+    .movies-information-start .moives-item-review{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 767px) {
+    .movies-information-start .review-content{
+        flex-direction: column;
+    }
+    .movies-information-start .moives-item{
+        flex-direction: column;
+    }
+}
+
+/* end media movies-information-end */
 /* movies-start-plan css */
 .movies-start-plan {
     padding: 50px 20px;
