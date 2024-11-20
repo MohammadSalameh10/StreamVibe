@@ -295,14 +295,70 @@ section p {
 
 /* questions css */
 .questions .ask-question-btn {
-    background-color: #E50000;
     width: fit-content;
 }
 
-.questions .ask-question-btn a {
+.questions .question-btn {
+    background-color: #E50000;
     color: #fff;
     font-size: 13px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
 }
+
+.modal {
+    color: #fff;
+}
+
+.modal-content {
+    background-color: #0F0F0F;
+}
+
+.modal-header {
+    border-bottom: 0px solid transparent;
+}
+
+.modal .btn-close {
+    background-color: #E50000;
+    opacity: 1;
+}
+
+.modal .modal-body {
+    border-top: 1px solid #E50000;
+}
+
+.modal-body .form-control {
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.modal-body .form-control::placeholder{
+color: #999999;
+}
+
+.modal-body button{
+    background-color: #E50000;
+    color: #fff;
+    font-size: 13px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.modal .modal-footer {
+    border-top: 1px solid #E50000;
+}
+
+.modal .modal-footer button {
+    background-color: #E50000;
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: #fff;
+}
+
 
 .question-after::after {
     content: "";

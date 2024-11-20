@@ -21,9 +21,8 @@ const disaplyFamilyMovies = async () => {
                         </div>
                     </div>
                 </div>
-                <div class="card-body d-flex align-items-center justify-content-between">
+                <div class="card-body text-start">
                     <span>Family</span>
-                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         `;
@@ -58,9 +57,8 @@ const disaplyMysteryMovies = async () => {
                         </div>
                     </div>
                 </div>
-                <div class="card-body d-flex align-items-center justify-content-between">
+                 <div class="card-body text-start">
                     <span>Mystery</span>
-                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         `;
@@ -94,9 +92,8 @@ const disaplyClassicsMovies = async () => {
                         </div>
                     </div>
                 </div>
-                <div class="card-body d-flex align-items-center justify-content-between">
+                <div class="card-body text-start">
                     <span>Classic</span>
-                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         `;

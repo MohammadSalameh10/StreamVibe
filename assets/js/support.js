@@ -1,5 +1,7 @@
 let show = document.querySelectorAll('.question i');
 let answer = document.querySelectorAll('.question p');
+let check = document.querySelector('.form-check-input');
+let send_button = document.querySelector('.send-massage button'); 
 
 show.forEach((item, index) => {
     item.addEventListener('click', () => {
@@ -8,7 +10,7 @@ show.forEach((item, index) => {
         item.classList.toggle('align-self-start');
         answer[index].classList.toggle('d-none');
     })
-})
+});
 
 show.forEach((item, index) => {
     item.addEventListener('touchend', () => {
@@ -17,4 +19,8 @@ show.forEach((item, index) => {
         item.classList.toggle('align-self-start');
         answer[index].classList.toggle('d-none');
     })
-})
+});
+
+check.addEventListener('click', () => {
+    send_button.classList.toggle('disabled');
+});
