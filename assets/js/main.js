@@ -117,7 +117,10 @@ let prevIcon = document.querySelector('.movies-categories-pagination .prev i');
 let next_pagination = document.querySelector('.movies-categories-pagination .next');
 let nextIcon = document.querySelector('.movies-categories-pagination .next i');
 let list_pagination = Array.from(document.querySelectorAll('.movies-categories-pagination .list'));
+let index = 0;
 
+prevIcon.style.cursor = 'auto';
+nextIcon.style.cursor = 'pointer';
 const updateActiveList = (direction) => {
     let activeIndex = -1;
 
@@ -175,37 +178,48 @@ next_pagination.addEventListener('click', () => {
 });
 
 prev_pagination.addEventListener('click', () => {
-
-    if (list_pagination[2].classList.contains('list-active')) {
-        document.getElementById('comedy').classList.remove('d-none');
-        document.getElementById('classic').classList.add('d-none');
+    if (index == 0) {
+        return;
     }
-    else if (list_pagination[1].classList.contains('list-active')) {
-        document.getElementById('adventure').classList.remove('d-none');
-        document.getElementById('mystery').classList.add('d-none');
-    }
-    else if (list_pagination[0].classList.contains('list-active')) {
-        document.getElementById('action').classList.remove('d-none');
-        document.getElementById('family').classList.add('d-none');
-    }
+if (list_pagination[2].classList.contains('list-active')) {
+   
+    document.getElementById('comedy').classList.remove('d-none');
+    document.getElementById('classic').classList.add('d-none');
+    index--;
 }
+else if (list_pagination[1].classList.contains('list-active')) {
+    document.getElementById('adventure').classList.remove('d-none');
+    document.getElementById('mystery').classList.add('d-none');
+    index--;
+}
+else if (list_pagination[0].classList.contains('list-active')) {
+    document.getElementById('action').classList.remove('d-none');
+    document.getElementById('family').classList.add('d-none');
+    index--;
+}
+}
+
 );
 
 next_pagination.addEventListener('click', () => {
-
+if(index == 3) {
+    return;
+}
     if (list_pagination[1].classList.contains('list-active')) {
         document.getElementById('action').classList.add('d-none');
         document.getElementById('family').classList.remove('d-none');
+        index++;
     }
     else if (list_pagination[2].classList.contains('list-active')) {
         document.getElementById('adventure').classList.add('d-none');
         document.getElementById('mystery').classList.remove('d-none');
+        index++;
     }
     else if (list_pagination[3].classList.contains('list-active')) {
         document.getElementById('comedy').classList.add('d-none');
         document.getElementById('classic').classList.remove('d-none');
+        index++;
     }
-
 });
 
 let prev_pagination_end = document.querySelector('.movies-categories-pagination-end .prev');
@@ -213,7 +227,7 @@ let prevIcon_end = document.querySelector('.movies-categories-pagination-end .pr
 let next_pagination_end = document.querySelector('.movies-categories-pagination-end .next');
 let nextIcon_end = document.querySelector('.movies-categories-pagination-end .next i');
 let list_pagination_end = Array.from(document.querySelectorAll('.movies-categories-pagination-end .list'));
-
+let index_end = 0;
 const updateActiveList_end = (direction) => {
     let activeIndex = -1;
 
@@ -270,13 +284,56 @@ next_pagination_end.addEventListener('click', () => {
     updateCursor_end();
 });
 
+prev_pagination_end.addEventListener('click', () => {
+    if(index_end == 0) {
+        return;
+    }
+    if (list_pagination_end[2].classList.contains('list-active')) {
+        document.getElementById('comedy').classList.remove('d-none');
+        document.getElementById('classic').classList.add('d-none');
+        index_end--;
+    }
+    else if (list_pagination_end[1].classList.contains('list-active')) {
+        document.getElementById('adventure').classList.remove('d-none');
+        document.getElementById('mystery').classList.add('d-none');
+        index_end--;
+    }
+    else if (list_pagination_end[0].classList.contains('list-active')) {
+        document.getElementById('action').classList.remove('d-none');
+        document.getElementById('family').classList.add('d-none');
+        index_end--;
+    }
+}
+);
+
+next_pagination_end.addEventListener('click', () => {
+    if(index_end == 3) {
+        return;
+    }
+    if (list_pagination_end[1].classList.contains('list-active')) {
+        document.getElementById('action').classList.add('d-none');
+        document.getElementById('family').classList.remove('d-none');
+        index_end++;
+    }
+    else if (list_pagination_end[2].classList.contains('list-active')) {
+        document.getElementById('adventure').classList.add('d-none');
+        document.getElementById('mystery').classList.remove('d-none');
+        index_end++;
+    }
+    else if (list_pagination_end[3].classList.contains('list-active')) {
+        document.getElementById('comedy').classList.add('d-none');
+        document.getElementById('classic').classList.remove('d-none');
+        index_end++;
+    }
+}
+);
 
 const mediaQuery_prev = window.matchMedia('(max-width: 480px)');
 if (mediaQuery_prev.matches) {
     prev_pagination_end.addEventListener('click', () => {
 
         if (list_pagination_end[2].classList.contains('list-active')) {
-            document.getElementById('classic').classList.add('d-none');            
+            document.getElementById('classic').classList.add('d-none');
             document.getElementById('mystery').classList.remove('d-none');
             document.getElementById('family').classList.remove('d-none');
         }
@@ -291,24 +348,9 @@ if (mediaQuery_prev.matches) {
     }
     );
 }
-else{
-    prev_pagination_end.addEventListener('click', () => {
 
-        if (list_pagination_end[2].classList.contains('list-active')) {
-            document.getElementById('comedy').classList.remove('d-none');
-            document.getElementById('classic').classList.add('d-none');
-        }
-        else if (list_pagination_end[1].classList.contains('list-active')) {
-            document.getElementById('adventure').classList.remove('d-none');
-            document.getElementById('mystery').classList.add('d-none');
-        }
-        else if (list_pagination_end[0].classList.contains('list-active')) {
-            document.getElementById('action').classList.remove('d-none');
-            document.getElementById('family').classList.add('d-none');
-        }
-    }
-    );
-}
+
+
 const mediaQuery_next = window.matchMedia('(max-width: 480px)');
 if (mediaQuery_next.matches) {
     next_pagination_end.addEventListener('click', () => {
@@ -327,23 +369,7 @@ if (mediaQuery_next.matches) {
     }
     );
 }
-else{
-    next_pagination_end.addEventListener('click', () => {
-        if (list_pagination_end[1].classList.contains('list-active')) {
-            document.getElementById('action').classList.add('d-none');
-            document.getElementById('family').classList.remove('d-none');
-        }
-        else if (list_pagination_end[2].classList.contains('list-active')) {
-            document.getElementById('adventure').classList.add('d-none');
-            document.getElementById('mystery').classList.remove('d-none');
-        }
-        else if (list_pagination_end[3].classList.contains('list-active')) {
-            document.getElementById('comedy').classList.add('d-none');
-            document.getElementById('classic').classList.remove('d-none');
-        }
-    }
-    );
-}
+
 
 
 let show = document.querySelectorAll('.question i');
