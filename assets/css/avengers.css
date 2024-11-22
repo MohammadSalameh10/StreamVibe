@@ -174,18 +174,6 @@ padding: 30px;
     color: #fff;
 }
 
-.prev,
-.next {
-    cursor: pointer;
-    background-color:#141414 ;
-    border: 1px solid #262626;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 7px 7px 7px 11px;
-    color: #999999;
-}
-
 .star-active {
     color: #E50000;
 }
@@ -200,21 +188,7 @@ padding: 30px;
     color: #999999;
 }
 
-.list-active {
-    background-color: #E50000;
-    width: 15px;
-}
 
-.list-non-active {
-    background-color: #333333;
-    width: 10px;
-}
-
-.list-active,
-.list-non-active {
-    height: 3px;
-    border-radius: 1px;
-}
 .movies-information-end{
     background-color: #1A1A1A;
     height: fit-content;
