@@ -71,6 +71,13 @@ basic.addEventListener('click', () => {
      basic.classList.add('active');
      standard.classList.remove('active');
      premium.classList.remove('active');
+     document.querySelector('.features-plan .content-description').textContent = 'Access to a wide selection of movies and shows, including some new releases.';
+     document.querySelector('.features-plan .device-description').textContent = 'Watch on one device simultaneously';
+     document.querySelector('.features-plan .hdr').textContent = 'No';
+     document.querySelector('.features-plan .dolby').textContent = 'No';
+     document.querySelector('.features-plan .ad').textContent = 'No';
+     document.querySelector('.features-plan .viewing').textContent = 'No';
+     document.querySelector('.features-plan .family').textContent = 'No';
      if (monthly.classList.contains('active')) {
           feature.innerHTML = `
        <h4>price</h4>
@@ -88,6 +95,13 @@ standard.addEventListener('click', () => {
      standard.classList.add('active');
      basic.classList.remove('active');
      premium.classList.remove('active');
+     document.querySelector('.features-plan .content-description').textContent = 'Access to a wider selection of movies and shows, including most new releases.';
+     document.querySelector('.features-plan .device-description').textContent = 'Watch on Two device simultaneously';
+     document.querySelector('.features-plan .hdr').textContent = 'Yes';
+     document.querySelector('.features-plan .dolby').textContent = 'Yes';
+     document.querySelector('.features-plan .ad').textContent = 'Yes';
+     document.querySelector('.features-plan .viewing').textContent = 'Yes, for select titles.';
+     document.querySelector('.features-plan .family').textContent = '5 family members.';
      if (monthly.classList.contains('active')) {
           feature.innerHTML = `
      <h4>price</h4>
@@ -105,6 +119,13 @@ premium.addEventListener('click', () => {
      premium.classList.add('active');
      standard.classList.remove('active');
      basic.classList.remove('active');
+     document.querySelector('.features-plan .content-description').textContent = 'Access to a widest selection of movies and shows, including all new releases.';
+     document.querySelector('.features-plan .device-description').textContent = 'Watch on Four device simultaneously';
+     document.querySelector('.features-plan .hdr').textContent = 'Yes';
+     document.querySelector('.features-plan .dolby').textContent = 'Yes';
+     document.querySelector('.features-plan .ad').textContent = 'Yes';
+     document.querySelector('.features-plan .viewing').textContent = 'Yes, for all titles.';
+     document.querySelector('.features-plan .family').textContent = '6 family members.';
      if (monthly.classList.contains('active')) {
           feature.innerHTML = `
           <h4>price</h4>
