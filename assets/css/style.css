@@ -391,12 +391,6 @@ color: #999999;
     }
 }
 
-@media screen and (max-width: 575px) {
-    .questions .ask-question-btn {
-        margin-left: 12px;
-    }
-}
-
 /* end media questions */
 
 /* movies-watching-plans css */
