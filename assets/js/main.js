@@ -402,3 +402,4 @@ yearly.addEventListener('click', () => {
     price[1].innerHTML = `$155.99<span class = "duration">/year</span>`;
     price[2].innerHTML = `$179.99<span class = "duration">/year</span>`;
 });
+

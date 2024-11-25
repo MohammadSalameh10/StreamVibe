@@ -15,6 +15,9 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- animation css -->
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    
     <!-- page css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -22,7 +25,7 @@
 <body>
 
     <!-- start header -->
-    <header class="header position-relative">
+    <header class="header position-relative animation-header">
         <div class="header-background position-absolute w-100 d-flex flex-column align-items-center">
             <div class="header-logo">
                 <img src="./assets/img/header/logo.svg " class="img-fluid w-100" />
@@ -79,7 +82,7 @@
     <!-- start main -->
     <main>
 
-        <section class="movies-categories py-3" id="categories">
+        <section class="movies-categories py-3 animation" id="categories">
             <div class="container">
                 <div class="movies-description-pagination">
                     <div class="row align-items-center justify-content-between">
@@ -205,7 +208,7 @@
             </div>
         </section>
 
-        <section class="viewing-platforms" id="devices">
+        <section class="viewing-platforms animation" id="devices">
             <div class="container">
                 <div class="viewing-platforms-description">
                     <h2>We Provide you streaming experience across various devices</h2>
@@ -268,7 +271,7 @@
             </div>
         </section>
 
-        <section class="questions" id="faq">
+        <section class="questions animation" id="faq">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="questions-description col-xl-10 col-md-9 col-sm-7 ">
@@ -277,44 +280,12 @@
                             common questions about StreamVibe.</p>
                     </div>
                     <div class="ask-question-btn col-xl-2 col-md-3 col-sm-5 p-3 rounded-2">
-                      
+
                         <button type="button" class="question-btn" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Ask a Question
                         </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ask a Question</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="mb-3">
-                                                <label for="name" class="col-form-label">Sender's Name:</label>
-                                                <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
-                                                required placeholder="Enter Your Name"/>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Quesion:</label>
-                                                <textarea class="form-control" id="message-text" rows="3" aria-describedby="messageHelp"
-                                                required placeholder="Enter your Quesion"></textarea>
-                                            </div>
-                                            <button type="submit">Send Quesion</button>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="questions-place d-flex align-items-center gap-5 py-5">
@@ -430,7 +401,7 @@
             </div>
         </section>
 
-        <section class="movies-watching-plans" id="pricing">
+        <section class="movies-watching-plans animation" id="pricing">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="movies-watching-plans-description col-xl-10 col-md-9 col-sm-7">
@@ -480,7 +451,7 @@
             </div>
         </section>
 
-        <section class="movies-start-plan">
+        <section class="movies-start-plan animation">
             <div class="container">
                 <div class="start-plan-background position-relative">
                     <div class="start-plan-item position-absolute d-flex justify-content-center">
@@ -504,7 +475,7 @@
     <!-- end main -->
 
     <!-- start footer -->
-    <footer class="footer">
+    <footer class="footer animation">
         <div class="container">
             <div class="row">
                 <div class="footer-item col-lg-2 col-6 d-flex flex-column">
@@ -583,11 +554,46 @@
     </footer>
     <!-- end footer -->
 
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog">
+     <div class="modal-content">
+         <div class="modal-header">
+             <h1 class="modal-title fs-5" id="exampleModalLabel">Ask a Question</h1>
+             <button type="button" class="btn-close" data-bs-dismiss="modal"
+                 aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+             <form>
+                 <div class="mb-3">
+                     <label for="name" class="col-form-label">Sender's Name:</label>
+                     <input type="text" class="form-control" id="name"
+                         aria-describedby="nameHelp" required
+                         placeholder="Enter Your Name" />
+                 </div>
+                 <div class="mb-3">
+                     <label for="message-text" class="col-form-label">Quesion:</label>
+                     <textarea class="form-control" id="message-text" rows="3"
+                         aria-describedby="messageHelp" required
+                         placeholder="Enter your Quesion"></textarea>
+                 </div>
+                 <button type="submit">Send Quesion</button>
+             </form>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+         </div>
+     </div>
+ </div>
+</div>
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    <!-- animation js -->
+     <script src="./assets/js/animation.js"></script>
     <!-- page js -->
     <script src="./assets/js/main.js"></script>
 

@@ -131,6 +131,7 @@ section p {
 /* modal css */
 .modal {
     color: #fff;
+    font-family: var(--main-font);
 }
 
 .modal-content {

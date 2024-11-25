@@ -28,12 +28,13 @@ section p {
     --main-font: 'manrope';
 }
 
+
 /* header css */
 .header {
     background-image: url(./../img/header/movies.png);
     background-position: top center;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 800px;
 }
 
 .header-background {
@@ -104,6 +105,7 @@ section p {
 /* end media navbar */
 
 /* movies-categories css */
+
 .movies-categories {
     height: 500px;
     font-family: var(--main-font);
@@ -167,7 +169,6 @@ section p {
 
 .card-body {
     color: #fff;
-    cursor: pointer;
 }
 
 /* start media movies-categories */
@@ -309,6 +310,7 @@ section p {
 
 .modal {
     color: #fff;
+    font-family: var(--main-font);
 }
 
 .modal-content {
